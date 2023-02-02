@@ -20,9 +20,8 @@ let itemRemoved = supplyChanges.pop();
 console.log('4. Removed item:', itemRemoved);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
-let moreDeliveries = supplyChanges.push(25);
-console.log('5. Adding 25 to supplyChanges.', moreDeliveries);
-//console.log(supplyChanges);
+supplyChanges.push(25);
+console.log('5. Adding 25 to supplyChanges.',supplyChanges);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -74,4 +73,15 @@ console.log('8. Total supplies available is:',value);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 
-    
+let max = 572;
+let part = 7;
+let box = 0;
+
+while(max >= part){
+    max = max - part;
+    box++;
+    //console.log('Boxes filled:', box);
+}
+console.log('Boxes filled:', box);
+console.log('How many parts left over',(max));
+

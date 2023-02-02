@@ -1,1 +1,5 @@
 /* give your assignment a fun background color */
+
+body{
+    background-image: linear-gradient(rgb(163, 56, 74), rgb(255, 208, 0)); 
+}
